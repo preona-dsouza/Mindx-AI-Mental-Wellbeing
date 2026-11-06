@@ -1,0 +1,170 @@
+@'
+# ==========================================
+# MINDX - PYTHON PROJECT GITIGNORE
+# ==========================================
+
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Environment variables and credentials
+.env
+.env.*
+!.env.example
+!.env.template
+.streamlit/secrets.toml
+secrets.toml
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+
+# Secret and credential files
+*secret*
+*secrets*
+*credential*
+*credentials*
+*password*
+*token*
+*api_key*
+*apikey*
+
+# Databases and user account data
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# User information and private application data
+data/
+others/
+users/
+private/
+personal/
+user_data/
+user_uploads/
+
+# Audio, video and transcription files
+*.wav
+*.mp3
+*.mp4
+*.m4a
+*.ogg
+*.flac
+*.aac
+*.webm
+recordings/
+audio/
+transcriptions.csv
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+*.swp
+*.swo
+*backup*/
+*backup_*/
+
+# Archives and compressed backups
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# Generated reports and output
+reports/
+outputs/
+temp/
+tmp/
+generated/
+downloads/
+
+# Model checkpoints and large generated model files
+*.h5
+*.keras
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.pkl
+*.joblib
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE settings
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+
+@'
+
+# Groq and application secrets
+.streamlit/
+secrets.toml
+flask_session_secret.txt
+*secret*
+*secrets*
+.env
+.env.*
+'@ | Add-Content .gitignore
+# Test and coverage files
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+
+@'
+
+# Exclude local repair script and duplicate root files
+apply_html_auth_patch.py
+/home.html
+/login.html
+/register.html
+/bg-2.jpg
+/style.css
+
+# Exclude HTML templates
+templates/
+
+# Exclude private dataset until reviewed
+wellness_dataset.csv
+'@ | Add-Content .gitignore
+# Build and distribution files
+build/
+dist/
+*.egg-info/
+# Exclude HTML templates
+templates/
+# Node.js dependencies (if applicable)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+'@ | Set-Content -Encoding UTF8 .gitignore

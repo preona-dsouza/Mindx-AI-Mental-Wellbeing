@@ -1,0 +1,22 @@
+# Existing application stack
+streamlit==1.37.0
+langchain==0.2.11
+langchain-community==0.2.10
+langchain-core==0.2.26
+langchain-groq==0.1.9
+python-dotenv==1.0.1
+ffmpeg-python
+audio-recorder-streamlit
+gtts
+pydub
+pyttsx3
+requests
+groq
+pandas
+scikit-learn
+sentence-transformers
+streamlit-chat
+SpeechRecognition
+textblob
+reportlab
+Flask>=3.0,<4.0
